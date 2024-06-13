@@ -18,6 +18,15 @@ body {
     src: url('fonts/AquireLight.otf');
 }
 
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
 .background-image {
     background-image: url(images/background.png);
     background-position: center;
@@ -26,10 +35,13 @@ body {
     height: 100vh;
     /* box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3); */
     box-shadow: inset 0 0 0 2000px rgb(40, 59, 24, 41%);
+    animation: animatedBackground 10s linear infinite alternate;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
 }
 
 .header {
-    background-color:rgba(0, 0, 0, 40%);
+    background-color: rgba(0, 0, 0, 40%);
     /* opacity: 40%; */
     color: #ffffff;
     padding: 15px 0px;
@@ -55,10 +67,12 @@ body {
     gap: 10%;
     margin-bottom: 0;
     font-size: 18px;
+
     li {
         list-style-type: none;
     }
 }
+
 .content-section {
     display: flex;
     flex-direction: row;
@@ -66,14 +80,16 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .content-left-section {
     color: #ffffff;
 }
+
 .content-right-section {
     font-size: 40px;
     line-height: 1.628571;
     color: #ffffff;
     padding: 50px !important;
-    background-color:rgba(0, 0, 0, 20%);
+    background-color: rgba(0, 0, 0, 20%);
     border-radius: 10px;
 }
