@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'AquireRegular';
+    src: url('fonts/AquireRegular.otf');
+}
+
+@font-face {
+    font-family: 'AquireBold';
+    src: url('fonts/AquireBold.otf');
+}
+
+@font-face {
+    font-family: 'AquireLight';
+    src: url('fonts/AquireLight.otf');
+}
+
+.background-image {
+    background-image: url(images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* box-shadow: inset 0 0 0 2000px rgba(255, 0, 150, 0.3); */
+    box-shadow: inset 0 0 0 2000px rgb(40, 59, 24, 41%);
+}
+
+.header {
+    background-color:rgba(0, 0, 0, 40%);
+    /* opacity: 40%; */
+    color: #ffffff;
+    padding: 15px 0px;
+}
+
+.header-flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'AquireBold', sans-serif;
+    font-size: 34px;
+}
+
+.navigation-flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10%;
+    margin-bottom: 0;
+    font-size: 18px;
+    li {
+        list-style-type: none;
+    }
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 88%;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-left-section {
+    color: #ffffff;
+}
+.content-right-section {
+    font-size: 40px;
+    line-height: 1.628571;
+    color: #ffffff;
+    padding: 50px !important;
+    background-color:rgba(0, 0, 0, 20%);
+    border-radius: 10px;
+}
