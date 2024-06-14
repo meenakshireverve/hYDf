@@ -28,7 +28,7 @@ body {
 }
 
 .background-image {
-    background-image: url(images/background.png);
+    background-image: url(images/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@ body {
     background-color: rgba(0, 0, 0, 40%);
     /* opacity: 40%; */
     color: #ffffff;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 .header-flex-box {
@@ -56,11 +56,17 @@ body {
 }
 
 .logo {
-    font-family: 'AquireBold', sans-serif;
-    font-size: 34px;
+    font-family: 'AquireBold', sans-serif !important;
+    font-size: 34px !important;
+    color: #ffffff !important;
+    text-align: center;
 }
+/* .navbar {
+    min-height: none;
+    padding:10px 0px ;
+} */
 
-.navigation-flex-box {
+/* .navigation-flex-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -71,7 +77,7 @@ body {
     li {
         list-style-type: none;
     }
-}
+} */
 
 .content-section {
     display: flex;
@@ -86,15 +92,15 @@ body {
 }
 
 .content-right-section {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 1.628571;
     color: #ffffff;
-    padding: 50px !important;
+    padding: 40px !important;
     background-color: rgba(0, 0, 0, 20%);
     border-radius: 10px;
 }
 .footer {
-    background-color: rgba(255, 255, 255, 35%);
+    background-color: rgba(255, 255, 255, 50%);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -103,26 +109,30 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .reverve-logo {
-    width: 8%;
+    width: 26%;
 }
+
 
 /* Media Queries */
 
 @media (max-width: 576px) {
-    .navigation {
+    /* .navigation {
         display: none;
-    }
+    } */
     .header {
         padding: 10px 0px;
     }
     .logo {
         font-size: 38px;
     }
-    .header-flex-box {
+    /* .header-flex-box {
         justify-content: center;
-    }
+    } */
     .content-right-section {
         font-size: 28px;
         padding: 35px !important;
@@ -132,6 +142,6 @@ body {
         width: 100%;
     }
     .reverve-logo {
-        width: 20%;
+        width: 45%;
     }
 }
