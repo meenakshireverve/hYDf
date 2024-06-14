@@ -93,3 +93,10 @@ body {
     background-color: rgba(0, 0, 0, 20%);
     border-radius: 10px;
 }
+.footer {
+    background: rgba(255, 255, 255, 35%);
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    border-top-right-radius: 10px;
+}
