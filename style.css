@@ -97,6 +97,41 @@ body {
     background-color: rgba(255, 255, 255, 35%);
     position: absolute;
     bottom: 0;
-    padding: 15px;
-    border-top-right-radius: 10px;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.reverve-logo {
+    width: 8%;
+}
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+    .navigation {
+        display: none;
+    }
+    .header {
+        padding: 15px 0px;
+    }
+    .logo {
+        font-size: 42px;
+    }
+    .header-flex-box {
+        justify-content: center;
+    }
+    .content-right-section {
+        font-size: 28px;
+        padding: 35px !important;
+    }
+    .footer {
+        font-size: 18px;
+        width: 100%;
+    }
+    .reverve-logo {
+        width: 20%;
+    }
 }
